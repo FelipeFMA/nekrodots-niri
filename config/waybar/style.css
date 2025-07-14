@@ -1,0 +1,75 @@
+* {
+    font-family:
+        "JetBrainsMono Nerd Font", "JetBrains Mono Nerd Font", "JetBrains Mono",
+        monospace;
+    font-size: 13px;
+}
+
+window#waybar {
+    background-color: #282828;
+    color: #ebdbb2;
+    border-radius: 0px;
+    margin: 0;
+    border: none;
+}
+
+#workspaces {
+    margin: 0px 1px;
+    border: none;
+}
+
+#workspaces button {
+    color: #ebdbb2;
+    background-color: #282828;
+    border-radius: 4px;
+    padding: 0 5px;
+    min-width: 20px;
+    min-height: 20px;
+    transition:
+        background-color 0.2s,
+        color 0.2s;
+}
+
+#workspaces button.active {
+    background-color: #ebdbb2;
+    color: #282828;
+    border-radius: 4px;
+}
+
+#workspaces button.urgent {
+    background-color: #fb4934;
+    color: #282828;
+    border-radius: 4px;
+}
+
+#clock,
+#bluetooth,
+#tray,
+#battery,
+#network,
+#pulseaudio {
+    padding: 0 10px;
+    color: #ebdbb2;
+    background-color: #282828;
+    border-radius: 4px;
+}
+
+#battery.charging {
+    color: #b8bb26;
+}
+
+#battery.warning:not(.charging) {
+    color: #fabd2f;
+}
+
+#battery.critical:not(.charging) {
+    color: #fb4934;
+}
+
+#network.disconnected {
+    color: #fb4934;
+}
+
+#pulseaudio.muted {
+    color: #a89984;
+}
